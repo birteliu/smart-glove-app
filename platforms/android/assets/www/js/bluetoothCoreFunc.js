@@ -47,7 +47,7 @@ function drawBackgroundColor() {
             if ("G" == a.cmd) { var c; for (c = 0; c < dataBuf.length - 1; c++) dataBuf[c][1] = dataBuf[c + 1][1];
                 dataBuf[c][1] = parseInt(a.value) } else {
                 "m" == a.cmd ? 0 == a.value ? (app.txtSensorStatus.textContent = "感測器開關：關閉", sensorStatus = !1) : 1 == a.value && (app.txtSensorStatus.textContent = "感測器開關：開啟", sensorStatus = !0) : "c" == a.cmd ? app.txtCnt.textContent =
-                    "壓力閾值計數：" + a.value : "t" == a.cmd ? (vThreshold = parseInt(a.value), app.txtThreshold.textContent = "壓力閾值" + vThreshold) : "d" == a.cmd ? (vDuration = parseInt(a.value), app.txtDuration.textContent = "感測時間：" + vDuration) : (console.log(a.cmd), console.log(a.value));
+                    a.value : "t" == a.cmd ? (vThreshold = parseInt(a.value), app.txtThreshold.textContent = "壓力閾值：" + vThreshold) : "d" == a.cmd ? (vDuration = parseInt(a.value), app.txtDuration.textContent = "感測時間：" + vDuration) : (console.log(a.cmd), console.log(a.value));
                 return
             }
         d.addRows(dataBuf);
