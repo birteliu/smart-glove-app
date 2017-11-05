@@ -121,6 +121,8 @@ a {
 
 .top-btn a:hover {
     text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .top-btn a:visited {
@@ -150,6 +152,14 @@ a {
     width: 100%;
     font-size: 1.5em;
 }
+.input-text2 {
+    border: solid 1px #8BBE47;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5em;
+}
 
 .input-text-all {
     border: solid 1px #8BBE47;
@@ -167,6 +177,8 @@ a {
     border: solid 1px #8BBE47;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     color: #ffffff;
     width: 100%;
     font-size: 1.5em;
@@ -190,6 +202,9 @@ a {
 .col-xs-4 {
     padding-left: 0;
 }
+.white-color {
+    color: #ffffff;
+}
 
 .gray-color {
     color: #78756F;
@@ -197,6 +212,64 @@ a {
 
 .green-color {
     color: #8BBE47;
+}
+.set-btn {
+    width: 15%;
+    margin: 15px 0 0 10px;
+    float: right;
+}
+.back-btn {
+    width: 15%;
+    margin: 15px 10px 0 0px;
+    float: left;
+}
+.glove-img {
+    width: 100%;
+    padding-bottom: 5px;
+    margin-top: -20px;
+}
+.glove-btn {
+    width: 20%;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.connect-text {
+    color: #8BBE47;
+}
+.card {
+    margin-top: 15px;
+    border: solid 1px #8BBE47;
+    border-radius: 8px;
+}
+.count-title {
+    text-align: center;
+    padding: 5px;
+    background-color: #8BBE47;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.count-result {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.count-describe {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+.chart-content {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5em;
 }
 
 @media screen and (min-width: 450px) {
@@ -216,5 +289,20 @@ a {
         border-radius: 100px;
         font-size: 1.5em;
         font-weight: bold;
+    }
+    .set-btn {
+        width: 5%;
+    }
+    .back-btn {
+        width: 5%;
+    }
+    .glove-img {
+        width: 30%;
+
+    }
+}
+@media (max-width: 320px) {
+    .four-btn {
+        padding: 10px 0;
     }
 }
